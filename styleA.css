@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 10px 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-top: 1px solid #687291;
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Tek ve çift sıradaki kutular */
+.box:nth-child(odd) {
+    background-color: #dfe1e7;
+}
+
+.box:nth-child(even) {
+    background-color: #eeeff2;
+}
+
+/* F kutusu (Son kutu) */
+.box:last-child,
+.f-box {
+    background-color: #687291 !important;
+    border: 4px solid black !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
